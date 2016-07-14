@@ -1,0 +1,167 @@
+﻿<Window x:Class="DFAapp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DFA builder" Height="650" Width="1025">
+
+    <Window.Resources>
+        <Storyboard x:Key="vashao">
+            <DoubleAnimation x:Name="putkitopdekhaw" Storyboard.TargetProperty="Height" From="0" To="100" Duration="0:0:0.25" />
+            <DoubleAnimation x:Name="putkiwidhtdekhaw" Storyboard.TargetProperty="Width" From="0" To="100" Duration="0:0:0.25" />
+
+        </Storyboard>
+    </Window.Resources>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="589*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="SteelBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="18*"/>
+                <RowDefinition Height="19*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="sob" Text="DFA-Builder" Grid.Row="0" Margin="15,0,0,0" FontSize="25" TextAlignment="Left" VerticalAlignment="Center" Foreground="White" ></TextBlock>
+            <Grid Grid.Row="1" Background="CadetBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="107*"/>
+                    <ColumnDefinition Width="126*"/>
+                    <ColumnDefinition Width="114*"/>
+                    <ColumnDefinition Width="670*"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="new" Grid.Column="2" >
+
+                    <Rectangle x:Name="newhit"
+                               Cursor="Hand" PreviewMouseLeftButtonDown="newhit_PreviewMouseLeftButtonDown"
+                               />
+                    <Image x:Name="hit" 
+                       Source="new.png"
+                       Margin="13,5,0,0"
+                       HorizontalAlignment="Left" Height="25"  
+                       VerticalAlignment="Top" 
+                       Width="30" 
+                           Cursor="Hand"
+                       PreviewMouseLeftButtonDown="newhit_PreviewMouseLeftButtonDown"/>
+
+                    <TextBlock Text="New" FontSize="23" Foreground="White" Height="30" 
+                           Width="54" VerticalAlignment="Center" 
+                           TextAlignment="Center" 
+                           Cursor="Hand"
+                           ToolTip="Click Here to test your DFA"
+                           PreviewMouseLeftButtonDown="newhit_PreviewMouseLeftButtonDown"
+                           HorizontalAlignment="Left" Margin="42,0,0,8"></TextBlock>
+
+
+                </Grid>
+
+                <Grid PreviewMouseDown="test_PreviewMouseDown" PreviewMouseLeftButtonDown="test_PreviewMouseLeftButtonDown">
+                    <Rectangle x:Name="test"
+                               Cursor="Hand"
+                               PreviewMouseLeftButtonDown="test_PreviewMouseLeftButtonDown_1" />
+                    <Image x:Name="run" 
+                       Source="runicon.png"
+                       Margin="15,5,0,0"
+                       HorizontalAlignment="Left" Height="25"  
+                       VerticalAlignment="Top" 
+                       Width="25" 
+                           Cursor="Hand"
+                       PreviewMouseLeftButtonDown="run_PreviewMouseLeftButtonDown"/>
+
+                    <TextBlock Text="Test" FontSize="23" Foreground="White" Height="30" 
+                           Width="54" VerticalAlignment="Center" 
+                           TextAlignment="Center" 
+                           Cursor="Hand"
+                           ToolTip="Click Here to test your DFA"
+                           HorizontalAlignment="Left" Margin="35,0,0,8"></TextBlock>
+
+
+                </Grid>
+                <Grid Grid.Column="1" x:Name="buildg">
+                    <Rectangle x:Name="buildhit" Cursor="Hand" PreviewMouseLeftButtonDown="buildhit_PreviewMouseLeftButtonDown"></Rectangle>
+                    <Image x:Name="build" 
+                	Source="build.png"
+                	Margin="21,5,0,0"
+                	HorizontalAlignment="Left" Height="25"  
+                	VerticalAlignment="Top" 
+                	Width="25" 
+                            Cursor="Hand"
+                	PreviewMouseLeftButtonDown="buildhit_PreviewMouseLeftButtonDown" Grid.Column="1"/>
+                    <TextBlock Text="Build" FontSize="23" Foreground="White" Height="30" 
+                	Width="60" VerticalAlignment="Center" 
+                	TextAlignment="Center"  Cursor="Hand"
+                    PreviewMouseLeftButtonDown="buildhit_PreviewMouseLeftButtonDown"       
+                	HorizontalAlignment="Left" Margin="47,2,0,6" Grid.Column="1"/>
+
+                </Grid>
+                <Line Stroke="Gray" StrokeThickness="2" Y1="40" X1="0" Margin="105,0" Grid.ColumnSpan="4"/>
+                <Line Stroke="Gray" StrokeThickness="2" Y1="40" X1="0" Margin="123,0,230,0" Grid.Column="1" Grid.ColumnSpan="3"/>
+
+
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Background="Transparent">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="181*"/>
+                <ColumnDefinition Width="896*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0"
+                  x:Name="tools" 
+                  Background="SkyBlue"
+                  
+                  
+                  
+                  >
+                <Image Source="circle.png"
+                       HorizontalAlignment="Left"
+                       Height="100" Margin="30,116,0,0" 
+                       VerticalAlignment="Top" 
+                       Width="100" 
+                       RenderTransformOrigin="0.06,0.12" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown"/>
+                <ComboBox x:Name="drawingcombo"  HorizontalAlignment="Left" 
+                           Margin="0,35,0,0" 
+                           VerticalAlignment="Top" 
+                           Width="171" SelectionChanged="drawingcombo_SelectionChanged"
+                           
+                           >
+                    <ComboBoxItem Content="Manual" Background="BurlyWood" Foreground="White" FontFamily="Segoe UI Light" />
+                    <ComboBoxItem Content="Do some Automaton" Background="SteelBlue" Foreground="White" FontFamily="Segoe UI Light"/>
+
+                </ComboBox>
+                <TextBlock HorizontalAlignment="Left" Margin="1,16,0,0" TextWrapping="Wrap" Text="Drawing style" Foreground="White" VerticalAlignment="Top"/>
+                <TextBox x:Name="automationdrawingstateinputputki" 
+                         InputScope="Number"
+                         HorizontalAlignment="Left" Height="23" Margin="0,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" PreviewLostKeyboardFocus="automationdrawingstateinputputki_PreviewLostKeyboardFocus"/>
+                <TextBlock x:Name="automationdraingstatesnumbertitleputki" HorizontalAlignment="Left" Margin="1,60,0,0" TextWrapping="Wrap" Text="How much states  needed ?" Foreground="White" VerticalAlignment="Top"/>
+                <TextBlock x:Name="output" HorizontalAlignment="Left" Margin="10,269,0,0" TextWrapping="Wrap" Text="no output" VerticalAlignment="Top" Width="151" Height="Auto"/>
+                <Button HorizontalAlignment="Left" Margin="39,515,0,0" VerticalAlignment="Top" Width="75">
+                    <Button Content="Button" Width="75" Click="Button_Click"/>
+                </Button>
+                <ComboBox x:Name="startselector"  HorizontalAlignment="Left" 
+                	Margin="0,297,0,0" 
+                	VerticalAlignment="Top" 
+                     SelectedIndex="0"
+                	Width="171" SelectionChanged="startselector_SelectionChanged"
+                           
+                           >
+                </ComboBox>
+                <ComboBox x:Name="acceptedstate"  HorizontalAlignment="Left" 
+                	Margin="0,350,0,0" 
+                	VerticalAlignment="Top" 
+                	SelectedIndex="3"
+                	Width="171" SelectionChanged="acceptedstate_SelectionChanged"
+                           
+                           />
+            </Grid>
+            <Grid Grid.Column="1" Background="BurlyWood" x:Name="canva">
+                <Canvas x:Name="halarpo" Width="Auto">
+
+
+                </Canvas>
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Window>

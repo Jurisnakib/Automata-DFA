@@ -1,0 +1,22 @@
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\bin\Debug\DFAapp.exe.config
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\bin\Debug\DFAapp.exe
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\bin\Debug\DFAapp.pdb
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\MainWindow.baml
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\MainWindow.g.cs
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\App.g.cs
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\DFAapp_MarkupCompile.cache
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\DFAapp.g.resources
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\DFAapp.Properties.Resources.resources
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\DFAapp.csproj.GenerateResource.Cache
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\DFAapp.exe
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\DFAapp.pdb
+c:\users\moibin\documents\visual studio 2013\Projects\DFAapp\DFAapp\obj\Debug\DFAapp.csprojResolveAssemblyReference.cache
+C:\Users\DOLPHIN-PC\Downloads\pro\DFAapp\DFAapp\bin\Debug\DFAapp.exe.config
+C:\Users\DOLPHIN-PC\Downloads\pro\DFAapp\DFAapp\obj\Debug\DFAapp.exe
+C:\Users\DOLPHIN-PC\Downloads\pro\DFAapp\DFAapp\obj\Debug\DFAapp.pdb
+C:\Users\DOLPHIN-PC\Downloads\pro\DFAapp\DFAapp\obj\Debug\DFAapp.csprojResolveAssemblyReference.cache
+C:\Users\DOLPHIN-PC\Downloads\pro\DFAapp\DFAapp\obj\Debug\MainWindow.baml
+C:\Users\DOLPHIN-PC\Downloads\pro\DFAapp\DFAapp\obj\Debug\MainWindow.g.cs
+C:\Users\DOLPHIN-PC\Downloads\pro\DFAapp\DFAapp\obj\Debug\App.g.cs
+C:\Users\DOLPHIN-PC\Downloads\pro\DFAapp\DFAapp\obj\Debug\DFAapp_MarkupCompile.cache
+C:\Users\DOLPHIN-PC\Downloads\pro\DFAapp\DFAapp\obj\Debug\DFAapp.g.resources
